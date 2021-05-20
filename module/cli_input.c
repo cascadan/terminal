@@ -243,7 +243,7 @@ char* INPUT_GetBuffer(InputBufferType_e type)	{ return Input.Buffers[type].Data;
 void INPUT_SetBuffer(InputBufferType_e type, char* buffer, uint32_t len)
 {
 	cli_memcpy(Input.Buffers[type].Data, buffer, len);
-	Input.CurBuffer->BufferCount = Input.CurBuffer->CursorInBuffer = len;
+	Input.CurBuffer->BufferCount = Input.CurBuffer->CursorInBuffer = len-1;
 }
 
 void INPUT_CursorToHome()

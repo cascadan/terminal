@@ -176,6 +176,16 @@ bool CLI_GetArgHexByFlag(const char* flag, uint32_t* outValue)
 	return false;
 }
 
+inline uint32_t CLI_GetArgc(void)
+{
+	return Terminal.inputArgs.argc;
+}
+
+inline char** CLI_GetArgv(void)
+{
+	return Terminal.inputArgs.argv;
+}
+
 bool CLI_IsArgFlag(const char* flag)
 {
 	return _IndexOfFlag(flag) >= 0;

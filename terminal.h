@@ -50,4 +50,7 @@ bool CLI_GetArgHexByFlag(const char* flag, uint32_t* outValue);
 uint32_t CLI_GetArgDec(uint8_t index);
 uint32_t CLI_GetArgHex(uint8_t index);
 
+uint32_t CLI_GetArgc(void);
+char**   CLI_GetArgv(void);
+
 #endif // _TERMINAL_H

@@ -67,7 +67,7 @@ struct
     uint8_t executeState;						// state terminal
     volatile Params_s inputArgs;				// args current execute command
     bool isEntered;								// 
-}Terminal;		// Терминал
+}Terminal;		// Г’ГҐГ°Г¬ГЁГ­Г Г«
 
 TermCmd_s* _findTermCmd(const char* cmdName);
 
@@ -487,7 +487,7 @@ void _PrintTime(CLI_Time_s* t)
 	CLI_Printf("\r\n%02d:%02d:%02d.%03d", (int) t->hour, (int) t->minute, (int) t->second, (int) t->msec);
 }
 
-/// \brief Вывод текущего времени в терминал
+/// \brief Г‚Г»ГўГ®Г¤ ГІГҐГЄГіГ№ГҐГЈГ® ГўГ°ГҐГ¬ГҐГ­ГЁ Гў ГІГҐГ°Г¬ГЁГ­Г Г«
 /// \return none
 void CLI_PrintTime()
 {
@@ -498,7 +498,7 @@ void CLI_PrintTime()
 #endif
 }
 
-/// \brief Вывод текущего времени в терминал без перевода строки
+/// \brief Г‚Г»ГўГ®Г¤ ГІГҐГЄГіГ№ГҐГЈГ® ГўГ°ГҐГ¬ГҐГ­ГЁ Гў ГІГҐГ°Г¬ГЁГ­Г Г« ГЎГҐГ§ ГЇГҐГ°ГҐГўГ®Г¤Г  Г±ГІГ°Г®ГЄГЁ
 /// \return none
 void CLI_PrintTimeWithoutRN()
 {
